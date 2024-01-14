@@ -266,7 +266,7 @@ nav a:hover {
 }
 
 .project-card img {
-    max-width: 100%;
+    max-width: 100px;
     max-height: 100px;
 }
 
