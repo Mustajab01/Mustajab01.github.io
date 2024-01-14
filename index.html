@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>Mustajab Ali - Portfolio</title>
 </head>
 <body>
@@ -27,31 +31,99 @@
     </header>
 
     <section id="home">
-        <div class="intro">
+        <div class="image-section">
+            <img src="images/animatedProgrammer.png" alt="Animated Programmer Image">
+        </div>
+        <div class="text-section">
             <h2>Welcome to My Portfolio</h2>
-            <p>This Portfolio is under Construction</p>
+            <p>Explore my journey in the world of computer science and technology.</p>
+            <div class="cta-buttons">
+                <a href="resume.pdf" download="Mustajab_Ali_Resume.pdf" class="cta-btn" id="download-resume">
+                    <span class="icon">&#9993;</span>Resume
+                </a>
+                <a href="#contact" class="cta-btn" id="contact-me">
+                    <span class="icon">&phone;</span>Contact
+                </a>
+            </div>
         </div>
-        <div class="cta-buttons">
-            <a href="resume.pdf" download="Mustajab_Ali_Resume.pdf" class="cta-btn" id="download-resume">
-                <span class="icon">&#9993;</span>Resume
-            </a>
-            <a href="#contact" class="cta-btn" id="contact-me">
-                <span class="icon">&phone;</span>Contact
-            </a>
-        </div>
+        
     </section>
+    
 
     <section id="about">
         <h2>About Me</h2>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
+        <div class="about-content">
+            <div class="text-container">
+                <p>
+                    Greetings! I'm Mustajab Ali, a Computer Science student currently pursuing my undergraduate degree from University of Karachi. My academic journey has provided me with a solid foundation in programming, problem-solving, and a keen interest in exploring the vast realm of technology.
+                </p>
+                <p>
+                    Beyond the academic sphere, I am passionate about contributing to innovative projects and leveraging technology to address real-world challenges. I thrive in collaborative environments, valuing teamwork, effective communication, and the opportunity to learn from diverse perspectives. My goal is to continuously evolve my skills and make meaningful contributions to the ever-evolving field of Computer Science.
+                </p>
+            </div>
+        </div>
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
+        <div class="navbar">
+            <button id="languages-btn" onclick="showCard('languages')">Languages</button>
+            <button id="tools-btn" onclick="showCard('tools')">Tools</button>
+        </div>
+        <div class="skills-content">
+            <div class="skill-card-container languages-card">
+                <div class="skill-card">
+                    <img src="images/python_icon.png" alt="Python Icon">
+                    <p>Python</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/html_icon.png" alt="HTML Icon">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/css_icon.png" alt="CSS Icon">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/javascript_icon.png" alt="JS Icon">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/cpp_icon.png" alt="C++ Icon">
+                    <p>C++</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/sql_icon.png" alt="SQL Icon">
+                    <p>SQL</p>
+                </div>
+            </div>
+            <div class="skill-card-container tools-card">
+                <div class="skill-card">
+                    <img src="images/vsCode_icon.png" alt="Vs Code Icon">
+                    <p>VS Code</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/github_icon.png" alt="Github Icon">
+                    <p>Github</p>
+                </div>
+                <div class="skill-card">
+                    <img src="images/xampp_icon.png" alt="Xampp Icon">
+                    <p>Xampp</p>
+                </div>
+                
+                <div class="skill-card">
+                    <img src="images/mysql_icon.png" alt="MySQL Icon">
+                    <p>MySQL</p>
+                </div>
+                
+            </div>
+        </div>
     </section>
+
+
+    <section id="projects">
+        <h2>Projects</h2>
+    </section>    
 
     <section id="contact">
         <h2>Contact Me</h2>
