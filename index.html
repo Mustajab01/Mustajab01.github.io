@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <title>Mustajab Ali - Portfolio</title>
 </head>
@@ -46,7 +46,6 @@
                 </a>
             </div>
         </div>
-        
     </section>
     
 
@@ -73,46 +72,46 @@
         <div class="skills-content">
             <div class="skill-card-container languages-card">
                 <div class="skill-card">
-                    <img src="images/python_icon.png" alt="Python Icon">
+                    <img src="images/skills/python_icon.png" alt="Python Icon">
                     <p>Python</p>
                 </div>
                 <div class="skill-card">
-                    <img src="images/html_icon.png" alt="HTML Icon">
+                    <img src="images/skills/html_icon.png" alt="HTML Icon">
                     <p>HTML</p>
                 </div>
                 <div class="skill-card">
-                    <img src="images/css_icon.png" alt="CSS Icon">
+                    <img src="images/skills/css_icon.png" alt="CSS Icon">
                     <p>CSS</p>
                 </div>
                 <div class="skill-card">
-                    <img src="images/javascript_icon.png" alt="JS Icon">
+                    <img src="images/skills/javascript_icon.png" alt="JS Icon">
                     <p>JavaScript</p>
                 </div>
                 <div class="skill-card">
-                    <img src="images/cpp_icon.png" alt="C++ Icon">
+                    <img src="images/skills/cpp_icon.png" alt="C++ Icon">
                     <p>C++</p>
                 </div>
                 <div class="skill-card">
-                    <img src="images/sql_icon.png" alt="SQL Icon">
+                    <img src="images/skills/sql_icon.png" alt="SQL Icon">
                     <p>SQL</p>
                 </div>
             </div>
             <div class="skill-card-container tools-card">
                 <div class="skill-card">
-                    <img src="images/vsCode_icon.png" alt="Vs Code Icon">
+                    <img src="images/skills/vsCode_icon.png" alt="Vs Code Icon">
                     <p>VS Code</p>
                 </div>
                 <div class="skill-card">
-                    <img src="images/github_icon.png" alt="Github Icon">
+                    <img src="images/skills/github_icon.png" alt="Github Icon">
                     <p>Github</p>
                 </div>
                 <div class="skill-card">
-                    <img src="images/xampp_icon.png" alt="Xampp Icon">
+                    <img src="images/skills/xampp_icon.png" alt="Xampp Icon">
                     <p>Xampp</p>
                 </div>
                 
                 <div class="skill-card">
-                    <img src="images/mysql_icon.png" alt="MySQL Icon">
+                    <img src="images/skills/mysql_icon.png" alt="MySQL Icon">
                     <p>MySQL</p>
                 </div>
                 
@@ -123,11 +122,57 @@
 
     <section id="projects">
         <h2>Projects</h2>
-    </section>    
+        <div class="project-card-container">
+            <div class="project-card">
+                <a href="https://mustajab01.github.io/Age-Calculator/" target="_blank">
+                <img src="images/projects/age_calculator.png" alt="Project 1 Image">
+                <h3>Age Calculator</h3>
+                </a>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="project-card">
+                <img src="images/projects/countown_timer.png" alt="Project 2 Image">
+                <h3><a href="https://mustajab01.github.io/Countdown-Timer/">Countdown Timer</a></h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="project-card">
+                <img src="images/projects/gpa_calculator.png" alt="Project 3 Image">
+                <h3><a href="https://mustajab01.github.io/GPA-Calculator/">GPA Calculator</a></h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <!--  -->
+            <div class="project-card">
+                <img src="images/projects/simple_calculator.png" alt="Project 1 Image">
+                <h3><a href="https://mustajab01.github.io/Calculator/">Aritmetic Calculator</a></h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="project-card">
+                <img src="images/projects/sorting_algorithms_visualizer.png" alt="Project 2 Image">
+                <h3><a href="https://mustajab01.github.io/Algorithms-Web-App/">Sorting Algorithms Visualizer</a></h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="project-card">
+                <img src="images/projects/scheduling_algorithms.png" alt="Project 3 Image">
+                <h3><a href="https://mustajab01.github.io/OS-Algorithms/">Scheduling Algorithms Visualizer</a></h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+        </div>
+    </section>
+    
+    
 
     <section id="contact">
         <h2>Contact Me</h2>
+        <div class="contact-form">
+            <form action="mailto:mustajabali.321@gmail.com" method="post" enctype="text/plain">
+                <input type="text" id="client-name" placeholder="Your Name" required>
+                <input type="email" id="client-email" placeholder="Your Email" required>
+                <textarea id="client-message" placeholder="Your Message" rows="5" required></textarea>
+                <button id="send-button">Send</button>
+            </form>
+        </div>
     </section>
+    
 
     <script src="script.js"></script>
 </body>

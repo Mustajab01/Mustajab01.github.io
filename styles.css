@@ -25,6 +25,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .header-content {
@@ -38,12 +39,12 @@ header {
     align-items: center;
 }
 
-h1 {
+.name-container h1 {
     margin: 0;
     margin-left: 10px;
 }
 
-.menu-icon {
+.name-container .menu-icon {
     font-size: 1.5em;
     cursor: pointer;
     display: none;
@@ -71,6 +72,7 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
+/* Styles for Home Section */
 #home {
     text-align: center;
     padding: 80px 20px;
@@ -82,9 +84,15 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
 .text-section {
     max-width: 600px;
     margin: 0 auto;
+    text-align:center;
 }
 
 .text-section h2 {
@@ -118,16 +126,13 @@ nav a:hover {
     font-size: 1.3em;
 }
 
-.image-section img {
-    max-width: 100%;
-    height: auto;
-}
+
 
 
 /* Styles for About Me section */
 #about {
     text-align: center;
-    padding: 80px 20px;
+    padding: 20px;
 }
 
 .about-content {
@@ -137,14 +142,12 @@ nav a:hover {
 
 .text-container {
     background-color: #f3f3f7;
-    padding: 20px;
+    padding: 20px 50px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 15px;
     text-align: center;
 }
-
-
 
 #about h2 {
     font-size: 2.5em;
@@ -163,12 +166,16 @@ nav a:hover {
     text-align: center;
     padding: 80px 20px;
 }
+#skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
 
-.navbar {
+#skills .navbar {
     margin-bottom: 20px;
 }
 
-.navbar button {
+#skills .navbar button {
     background-color: transparent;
     color: var(--text-color);
     padding: 10px;
@@ -176,11 +183,11 @@ nav a:hover {
     border: none;
     cursor: pointer;
     margin-right: 30px;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid #d2d2d2;
     transition: border-bottom 0.3s ease;
 }
 
-.navbar button:hover {
+#skills .navbar button:hover {
     border-bottom: 2px solid #000000;
 }
 
@@ -201,11 +208,15 @@ nav a:hover {
 .skill-card {
     width: 100px;
     background-color: #f3f3f7;
-    padding: 20px;
+    padding: 1.25em;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 15px;
     text-align: center;
+    transition: 0.3s ease;
+}
+.skill-card:hover {
+    scale: 1.1;
 }
 
 .skill-card img {
@@ -214,25 +225,120 @@ nav a:hover {
 }
 
 .skill-card p {
-    margin-top: 10px;
     font-size: 1em;
-}
-
-#skills h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-}
-
-h3 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
 }
 
 .tools-card {
     display: none;
 }
 
+/* Styles for Projects section */
+#projects {
+    text-align: center;
+    padding: 20px;
+}
+#projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.project-card-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.project-card {
+    max-width: 150px;
+    background-color: #f3f3f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+.project-card:hover {
+    scale: 1.1;
+}
+
+.project-card img {
+    max-width: 100%;
+    max-height: 100px;
+}
+
+.project-card p {
+    margin-top: 10px;
+    font-size: 0.75em;
+}
+
+.project-card a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+    font-size: smaller;
+}
+
+
+.project-card a h3:hover{
+    color: var(--accent-color);
+}
+
+/* Styles for Contact section */
+#contact {
+    text-align: center;
+    padding: 80px 20px;
+}
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+#send-button {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
+}
+
+#send-button:hover {
+    background-color: var(--primary-color);
+}
+
+
+
 /* Mobile Responsive Styles */
+@media only screen and (max-width: 1200px){
+    #home{
+        display: block;
+    }
+}
 @media only screen and (max-width: 768px) {
     .name-container {
         width: 100%;
@@ -243,7 +349,9 @@ h3 {
         width: 100%;
     }
 
-    .menu-icon {
+    .name-container .menu-icon {
+        font-size: 1.5em;
+        cursor: pointer;
         display: block;
     }
 
@@ -270,6 +378,10 @@ h3 {
     .cta-btn {
         font-size: smaller;
     }
+    .text-section p {
+        margin: 0 10px;
+    }
+
 }
 
 @media only screen and (max-width: 380px) {
