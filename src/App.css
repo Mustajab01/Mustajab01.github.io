@@ -214,6 +214,7 @@ nav a:hover {
     margin: 15px;
     text-align: center;
     transition: 0.3s ease;
+    cursor: default;
 }
 .skill-card:hover {
     scale: 1.1;
@@ -226,10 +227,6 @@ nav a:hover {
 
 .skill-card p {
     font-size: 1em;
-}
-
-.tools-card {
-    display: none;
 }
 
 /* Styles for Projects section */
