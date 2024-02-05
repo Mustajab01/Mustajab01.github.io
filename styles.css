@@ -2,8 +2,8 @@
 
 :root {
     --primary-color: #0A2472;
-    --secondary-color: #2014CC; /* Changed */
-    --accent-color: #f3f3f7; /* Changed */
+    --secondary-color: #2014CC;
+    --accent-color: #f3f3f7;
     --text-color: #000000;
     --bg-color: #FFFFFF;
 }
@@ -42,6 +42,7 @@ header {
 .name-container h1 {
     margin: 0;
     margin-left: 10px;
+    cursor: default;
 }
 
 .name-container .menu-icon {
@@ -92,7 +93,7 @@ nav a:hover {
 .text-section {
     max-width: 600px;
     margin: 0 auto;
-    text-align:center;
+    text-align: center;
 }
 
 .text-section h2 {
@@ -108,7 +109,8 @@ nav a:hover {
     display: inline-block;
     margin: 0 15px;
     padding: 12px 25px;
-    background-color: var(--secondary-color); /* Changed */
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: var(--bg-color);
     text-decoration: none;
     font-weight: 600;
@@ -124,6 +126,26 @@ nav a:hover {
 .icon {
     margin-right: 10px;
     font-size: 1.3em;
+}
+/* Styles for Social Icons Section */
+.social-icons {
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+.social-icons h3{
+    font-size: smaller;
+}
+
+.social-icons img {
+    max-width: 45px;
+    height: auto;
+    border-radius: 50%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 /* Styles for About Me section */
@@ -150,6 +172,7 @@ nav a:hover {
 #about h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
+    
 }
 
 #about p {
@@ -213,7 +236,7 @@ nav a:hover {
     transition: 0.3s ease;
 }
 .skill-card:hover {
-    scale: 1.1;
+    transform: scale(1.1);
 }
 
 .skill-card img {
@@ -223,6 +246,7 @@ nav a:hover {
 
 .skill-card p {
     font-size: 1em;
+    cursor: default;
 }
 
 .tools-card {
@@ -259,7 +283,7 @@ nav a:hover {
     transition: 0.3s ease;
 }
 .project-card:hover {
-    scale: 1.1;
+    transform: scale(1.1);
 }
 
 .project-card img {
