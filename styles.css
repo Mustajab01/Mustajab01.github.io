@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400');
 
 :root {
-    --primary-color: #110B6B;
-    --secondary-color: #B9B5F8;
-    --accent-color: #2014CC;
+    --primary-color: #0A2472;
+    --secondary-color: #2014CC; /* Changed */
+    --accent-color: #f3f3f7; /* Changed */
     --text-color: #000000;
     --bg-color: #FFFFFF;
 }
@@ -69,7 +69,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--secondary-color);
+    color: var(--accent-color);
 }
 
 /* Styles for Home Section */
@@ -108,7 +108,7 @@ nav a:hover {
     display: inline-block;
     margin: 0 15px;
     padding: 12px 25px;
-    background-color: var(--accent-color);
+    background-color: var(--secondary-color); /* Changed */
     color: var(--bg-color);
     text-decoration: none;
     font-weight: 600;
@@ -126,9 +126,6 @@ nav a:hover {
     font-size: 1.3em;
 }
 
-
-
-
 /* Styles for About Me section */
 #about {
     text-align: center;
@@ -141,7 +138,7 @@ nav a:hover {
 }
 
 .text-container {
-    background-color: #f3f3f7;
+    background-color: var(--accent-color);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -183,12 +180,12 @@ nav a:hover {
     border: none;
     cursor: pointer;
     margin-right: 30px;
-    border-bottom: 2px solid #d2d2d2;
+    border-bottom: 2px solid var(--accent-color);
     transition: border-bottom 0.3s ease;
 }
 
 #skills .navbar button:hover {
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid var(--text-color);
 }
 
 .skills-content {
@@ -207,7 +204,7 @@ nav a:hover {
 
 .skill-card {
     width: 100px;
-    background-color: #f3f3f7;
+    background-color: var(--accent-color);
     padding: 1.25em;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -253,7 +250,7 @@ nav a:hover {
 
 .project-card {
     max-width: 150px;
-    background-color: #f3f3f7;
+    background-color: var(--accent-color);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -282,9 +279,8 @@ nav a:hover {
     font-size: smaller;
 }
 
-
 .project-card a h3:hover{
-    color: var(--accent-color);
+    color: var(--secondary-color);
 }
 
 /* Styles for Contact section */
@@ -292,6 +288,7 @@ nav a:hover {
     text-align: center;
     padding: 80px 20px;
 }
+
 #contact h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
@@ -316,7 +313,7 @@ nav a:hover {
 }
 
 #send-button {
-    background-color: var(--accent-color);
+    background-color: var(--secondary-color);
     color: var(--bg-color);
     padding: 12px 25px;
     border: none;
@@ -330,8 +327,6 @@ nav a:hover {
 #send-button:hover {
     background-color: var(--primary-color);
 }
-
-
 
 /* Mobile Responsive Styles */
 @media only screen and (max-width: 1200px){
